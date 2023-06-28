@@ -1,0 +1,335 @@
+body{
+    margin: 0;
+    font-family: myFont;
+    
+}
+
+@font-face {
+    font-family: myFont; 
+    src: url('segoe-ui-4-cufonfonts/Segoe UI.ttf'); 
+}
+
+/* .outer{
+    width: 100%;
+    height: 2000px;
+    background-color: rgb(190, 25, 25);
+} */
+
+.left{
+    margin-left: 70px;
+    margin-top: 0px;
+    width: 255px;
+    height: 100%;
+    background-color:white;
+    float: left;
+    position: fixed;
+    border-right: 0.01px solid darkgray;
+    font-size: 28px;
+}
+
+.header{
+    width: 630px;
+    height: 130px;  
+    padding-top: 0%;
+    float: left;
+    margin-left: 327px;
+    position: fixed;
+    z-index: 2;
+    background-color:white;
+    box-sizing: border-box ;
+    border-bottom: 0.1px solid darkgray;
+}
+
+.headerbutton{
+    border:none;
+    width: 315px;
+    height: 44px;
+    background-color:white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    float: left;
+}
+
+.right{
+    width: 310px;
+    height: 100%;
+    background-color: white;
+    float: left;
+    margin-left: 957px;
+    position: fixed;
+    border-left: 0.1px solid darkgray;
+    
+}
+
+.buttonl{
+    /* margin-top: 3px; */
+    border-radius: 20px;
+    border:none;
+    height: 52px;
+    background-color:white;
+    font-size: 17px;
+    letter-spacing: 1px;  
+}
+
+#tweet{
+    border-radius: 20px;
+    border:none;
+    background-color: rgb(13, 170, 243);
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-size: 18px;
+}
+
+#logo{
+    padding-top: 10px;
+    border-radius: 20px;
+    border:none;
+    height: 44px;
+    width: 44px;
+    background-color:white;
+}
+
+#logo:hover{
+    color: #000;
+    background-color: rgb(197, 210, 223);
+}
+
+button:hover{
+    color: #000;
+    background-color: rgb(197, 210, 223);
+}
+#tweet:hover{
+    color:white;
+    background-color: rgb(43, 89, 136);
+}
+.main{
+    width: 630px;
+    height: 100%;
+    /* padding-top: 0%; */
+    margin-left: 326px;
+    float: left;
+    margin-top: 150px;
+    position: relative;
+    z-index: -2;
+    background-color:white;
+    box-sizing: border-box ;
+    /* border-right: 0.1px solid darkgray; */
+    /* border-left: 0.1px solid darkgray; */
+    
+}
+
+.person{
+    border-radius: 20px;
+    border:none;
+    margin-left: 20px;
+    height: 44px;
+    width: 44px;
+    background-color:rgb(138, 153, 175);
+}
+
+.person:hover{
+    color: #000;
+    background-color: rgb(95, 114, 133);
+    
+}
+#name{
+    border: none;
+    font-size: larger; 
+}
+.field{
+    border-radius: 15px;
+    border:none;
+    height: 33px;
+    width: 33px;
+    margin-left: 66px;
+    margin-top: 20px;
+}
+
+.field1{
+    border-radius: 15px;
+    border:none;
+    height: 33px;
+    width: 33px;
+    margin-left: 0px;
+    margin-top: 0px;   
+}
+
+/* #tweetfield1{
+    border-radius: 15px;
+    border:none;
+    height: 33px;
+    width: 90px;
+    margin-left: 300px;
+    margin-top: 20px;
+} */
+.field1Tweet{
+    border-radius: 15px;
+    border:none;
+    height: 40px;
+    width: 80px;
+    margin-left: 500px;
+    margin-top: -40px;
+    background-color: rgb(13, 170, 243);
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.post{
+    width: 630px;
+    height: 600px;
+    margin-left: 0px;
+    margin-top: -10px;
+    z-index: 2;
+    background-color:white;
+    box-sizing: border-box ;
+    border-top: 0.1px solid darkgray;
+    border-bottom: 0.1px solid darkgray;
+    /* border-left: 0.1px solid darkgray; */
+}
+.photo{
+    border-radius: 15px;
+    margin-left: 70px;
+    position: absolute;
+    width: 550px;
+    height: 450px;
+    background-color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+    object-fit: cover;
+}
+.profile {
+    border-radius: 20px;
+    border:none;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 44px;
+    width: 44px;
+    background-image: url("safeerprofile.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.username{
+    margin-left: 75px;
+    margin-top: -60px;
+}
+.bottomfield{
+    border-radius: 15px;
+    border: none;
+    height: 20px;
+    width: 30px;
+    margin-left: 70px;
+    margin-top: 460px;
+}
+.searchpad{
+    border-radius: 30px;
+    margin: 30px;
+    width: 330px;
+    height: 40px;
+    background-color:aliceblue;
+    border:none;
+    justify-content:right;
+}
+.search{
+    border-radius: 30px;
+    margin-top: 0px;
+    margin-left: 40px;
+    width: 260px;
+    height: 38px;
+    background-color: aliceblue;
+    border:none;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#searchicon{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.getverified{
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 330px;
+    height: 130px;
+    background-color:aliceblue;
+}
+.words{
+    position: absolute;
+    margin-left:20px; 
+    margin-top: 10px;
+}
+#words1{
+    position: absolute;
+    margin-left:20px;
+    margin-top: 40px;
+}
+#verifiedbutton{
+    position: absolute;
+    margin-left:20px;
+    margin-top: 70px;
+    height: 40px;
+    width: 130px;
+    background-color:black;
+    color: white;
+    border-radius: 30px;
+    border:none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#suggestion{
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 330px;
+    height: 330px;
+    background-color:aliceblue;
+}
+.suggestions1{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 0px;
+    width: 330px;
+    height: 80px;
+    background-color:aliceblue;
+}
+.suggestions2{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 0px;
+    width: 330px;
+    height: 80px;
+    background-color:aliceblue;
+}
+.suggestions3{
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 0px;
+    width: 330px;
+    height: 80px;
+    background-color:aliceblue;
+}
+.suggestionscontent{
+    position: absolute;
+    margin-left:10px;
+    margin-top: 10px;
+}
+.more{
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 10px;
+    background-color:aliceblue; 
+    border-radius: 30px;
+    border:none;
+    height: 30px;
+    width: 30px;
+}
+
+
+
